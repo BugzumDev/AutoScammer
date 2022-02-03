@@ -1,0 +1,2 @@
+# AutoScammer
+Automatic messenger scammer
