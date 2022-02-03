@@ -1,16 +1,23 @@
 # AutoScammer v:1.0
 # Made by: BugzumDev
+print("Welcome to AutoScammer!")
+print("Made by: BugzumDev")
+print()
 
 # I am NOT responsible for any damage
 # Please don't go out and scam people with this
 
+print("Importing libs...")
 # Libaries
+from signal import pthread_kill
 from fbchat import Client
 from fbchat.models import *
 
+print("Logging in...")
 # log in
 client = Client("<email>", "<password>")
 
+print("Reading variables...")
 # Thread setup
 thread_id = "1234567890"
 thread_type = ThreadType.GROUP
@@ -31,6 +38,7 @@ scamvalue = "<scamAmount>"
 scamlink = "<scamLink>"
 scamemoji = "🤑📱"
 
+print("Searching for scam templates...")
 # Scam templates
 if scamtemplate == "1":
     if language == "hu":
@@ -51,5 +59,14 @@ elif scamtemplate == "3":
         scammsg = "Hey, do you want to talk? Click here: " + scamlink
 
 
+print("Scamming...")
 # Send message
 client.send(Message(text=scammsg), thread_id=thread_id, thread_type=thread_type)
+
+print("Scam message sent!")
+print()
+print("Message:")
+print(scammsg)
+print()
+input("Press enter to exit...")
+exit(0)
