@@ -9,7 +9,6 @@ print()
 
 print("Importing libs...")
 # Libaries
-from signal import pthread_kill
 from fbchat import Client
 from fbchat.models import *
 
