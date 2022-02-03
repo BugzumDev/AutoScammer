@@ -24,7 +24,7 @@ You need to edit some variables to costumize the scam 
 
 **scamtemplate:** A selector for a scam template
 
-(**Tip: set the variable to "costum", then you have to enter a scam message by hand to line)
+(**Tip: set the variable to "costum", then you have to enter a scam message by hand to line 46)
 
 **language:** The scam message's language *(supported languages: **Hungarian**, **english**. Use "hu" and "en" to specify a language)*
 
